@@ -13,43 +13,49 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                <i-feather name="home"></i-feather>
+              <a class="nav-link active" aria-current="page" routerLink="/">
+                <i-feather name="activity"></i-feather>
                 Dashboard
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i-feather name="file"></i-feather>
-                Orders
+              <a class="nav-link" routerLink="/clients">
+                <i-feather name="briefcase"></i-feather>
+                Clients
               </a>
+              <!-- add two sub menus here -->
+              <ul class="dropdown-container">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/assessments">
+                    <i-feather name="file-text"></i-feather>
+                    Assessment
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/users">
+                    <i-feather name="users"></i-feather>
+                    Users
+                  </a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i-feather name="shopping-cart"></i-feather>
-                Products
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i-feather name="users"></i-feather>
-                Customers
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" routerLink="/questions">
                 <i-feather name="bar-chart-2"></i-feather>
-                Reports
+                Questions
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i-feather name="layers"></i-feather>
-                Integrations
-              </a>
+              <!-- add one sub menu item here -->
+              <ul class="dropdown-container">
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/sections">
+                    <i-feather name="layers"></i-feather>
+                    Sections
+                  </a>
+                </li>
+              </ul>  
             </li>
           </ul>
-  
+<!--   
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>Saved reports</span>
             <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
@@ -81,6 +87,12 @@
                 Year-end sale
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </nav>
+      </div>
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <router-outlet></router-outlet>
+      </main>
+</div>
+      
