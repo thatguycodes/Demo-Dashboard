@@ -13,26 +13,26 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" routerLink="/">
+              <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
                 <i-feather name="activity"></i-feather>
                 Dashboard
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/clients">
+              <a class="nav-link" routerLink="/clients" routerLinkActive="active">
                 <i-feather name="briefcase"></i-feather>
                 Clients
               </a>
               <!-- add two sub menus here -->
               <ul class="dropdown-container">
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/assessments">
+                  <a class="nav-link" routerLink="/assessments" routerLinkActive="active">
                     <i-feather name="file-text"></i-feather>
                     Assessment
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/users">
+                  <a class="nav-link" routerLink="/users" routerLinkActive="active">
                     <i-feather name="users"></i-feather>
                     Users
                   </a>
@@ -40,14 +40,14 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLink="/questions">
+              <a class="nav-link" routerLink="/questions" routerLinkActive="active">
                 <i-feather name="bar-chart-2"></i-feather>
                 Questions
               </a>
               <!-- add one sub menu item here -->
               <ul class="dropdown-container">
                 <li class="nav-item">
-                  <a class="nav-link" routerLink="/sections">
+                  <a class="nav-link" routerLink="/sections" routerLinkActive="active">
                     <i-feather name="layers"></i-feather>
                     Sections
                   </a>
@@ -91,7 +91,7 @@
         </div>
       </nav>
       </div>
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 my-lg-3">
         <router-outlet></router-outlet>
       </main>
 </div>

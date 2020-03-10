@@ -17,7 +17,8 @@ const routes: Routes = [
     {path: 'assessments', component: AssessmentsComponent},
     {path: 'users', component: UsersComponent},
     {path: 'questions', component: QuestionsComponent},
-    {path: 'sections', component: SectionsComponent}
+    {path: 'sections', component: SectionsComponent},
+    {path: 'dashboard', component: DashboardComponent}
   ]
  }];
 
