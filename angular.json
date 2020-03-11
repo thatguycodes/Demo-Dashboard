@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "pemco-web-application": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pemco-web-application"
+    }
+  },
+  "defaultProject": "pemco-web-application",
+  "cli": {
+    "analytics": "cc6036ff-712e-444c-9b44-c48169091daa"
+  }
 }
