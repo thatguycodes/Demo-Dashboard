@@ -1,9 +1,10 @@
-import { ClientsComponent } from './../clients/clients.component';
-import { AssessmentsComponent } from './../clients/assessments/assessments.component';
-import { UsersComponent } from './../clients/users/users.component';
-import { SectionsComponent } from './../questions/sections/sections.component';
-import { QuestionsComponent } from './../questions/questions.component';
-import { DashboardComponent } from './../dashboard/dashboard.component';
+import { DummyService } from './../../shared/services/dummy.service';
+import { ClientsComponent } from '../clients/clients.component';
+import { AssessmentsComponent } from './../assessments/assessments.component';
+import { UsersComponent } from './../users/users.component';
+import { SectionsComponent } from './../sections/sections.component';
+import { QuestionsComponent } from '../questions/questions.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -21,6 +22,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     IconsModule,
     SharedModule
   ],
+  providers: [DummyService],
   exports: [ViewsComponent, DashboardComponent, QuestionsComponent, SectionsComponent, UsersComponent, AssessmentsComponent, ClientsComponent]
 })
 export class ViewsModule { }

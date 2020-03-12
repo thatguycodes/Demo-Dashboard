@@ -1,0 +1,113 @@
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">PEMCO</a>
+  <input
+    class="form-control form-control-dark w-100"
+    type="text"
+    placeholder="Search"
+    aria-label="Search"
+  />
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/dashboard"
+              routerLinkActive="active"
+            >
+              <i-feather name="activity"></i-feather>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/clients" routerLinkActive="active">
+              <i-feather name="briefcase"></i-feather>
+              Clients
+            </a>
+            <!-- add two sub menus here -->
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/assessments"
+              routerLinkActive="active"
+            >
+              <i-feather name="file-text"></i-feather>
+              Assessment
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/users" routerLinkActive="active">
+              <i-feather name="users"></i-feather>
+              Users
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/questions"
+              routerLinkActive="active"
+            >
+              <i-feather name="bar-chart-2"></i-feather>
+              Questions
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/sections"
+              routerLinkActive="active"
+            >
+              <i-feather name="layers"></i-feather>
+              Sections
+            </a>
+          </li>
+        </ul>
+        <!--   
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Saved reports</span>
+            <a class="d-flex align-items-center text-muted" href="#" aria-label="Add a new report">
+              <i-feather name="plus-circle"></i-feather>
+            </a>
+          </h6>
+          <ul class="nav flex-column mb-2">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i-feather name="file-text"></i-feather>
+                Current month
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i-feather name="file-text"></i-feather>
+                Last quarter
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i-feather name="file-text"></i-feather>
+                Social engagement
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i-feather name="file-text"></i-feather>
+                Year-end sale
+              </a>
+            </li>
+          </ul> -->
+      </div>
+    </nav>
+  </div>
+  <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 my-lg-3">
+    <router-outlet></router-outlet>
+  </main>
+</div>

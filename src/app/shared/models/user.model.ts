@@ -2,7 +2,7 @@ import { Company } from "./company.model";
 import { ReviewAnswer } from "./review-answer.model";
 import { AssessmentRoster } from "./assessment-roster.model";
 
-interface IUser {
+export interface IUser {
   id: string;
   firstname: string;
   lastname: string;

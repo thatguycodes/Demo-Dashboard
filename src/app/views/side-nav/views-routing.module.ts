@@ -1,9 +1,9 @@
-import { SectionsComponent } from './../questions/sections/sections.component';
-import { UsersComponent } from './../clients/users/users.component';
-import { AssessmentsComponent } from './../clients/assessments/assessments.component';
-import { QuestionsComponent } from './../questions/questions.component';
-import { ClientsComponent } from './../clients/clients.component';
-import { DashboardComponent } from './../dashboard/dashboard.component';
+import { SectionsComponent } from './../sections/sections.component';
+import { UsersComponent } from './../users/users.component';
+import { AssessmentsComponent } from './../assessments/assessments.component';
+import { QuestionsComponent } from '../questions/questions.component';
+import { ClientsComponent } from '../clients/clients.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 

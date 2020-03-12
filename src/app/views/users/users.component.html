@@ -13,23 +13,18 @@
         <th>Roster</th>
         <th>Company</th>
       </tr>
-      <tr>
-        <td>50</td>
-        <td>50</td>
-        <td>50</td>
-        <td>50</td>
-      </tr>
-      <tr>
-        <td>94</td>
-        <td>94</td>
-        <td>94</td>
-        <td>94</td>
-      </tr>
-      <tr>
-        <td>67</td>
-        <td>67</td>
-        <td>67</td>
-        <td>67</td>
+      <tr *ngFor="let user of users">
+        <td>{{user?.id}}</td>
+        <td>{{user?.firstname}}</td>
+        <td>{{user?.lastname}}</td>
+        <td>{{user?.username}}</td>
+        <td>{{user?.role}}</td>
+        <td>{{user?.published}}</td>
+        <td>{{user?.idNumber}}</td>
+        <td>{{user?.companyId}}</td>
+        <td>{{user?.roster}}</td>
+        <td>{{user?.company}}</td>
+       
       </tr>
     </table>
   </div>

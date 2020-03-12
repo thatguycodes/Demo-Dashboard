@@ -1,9 +1,10 @@
+import { DummyService } from './shared/services/dummy.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ViewsModule } from './views/views/views.module';
+import { ViewsModule } from './views/side-nav/views.module';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { ViewsModule } from './views/views/views.module';
     AppRoutingModule,
     ViewsModule
   ],
-  providers: [],
+  providers: [DummyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
